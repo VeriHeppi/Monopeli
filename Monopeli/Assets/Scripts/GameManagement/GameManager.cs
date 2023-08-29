@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         foreach (Player player in players)
         {
             player.money = STARTING_MONEY; // Fore example, if starting with $1500
-            player.position = 0;
+            player.routePosition = 0;
         }
     }
 

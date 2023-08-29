@@ -360,6 +360,7 @@
 "Assets/Scripts/GameManagement/GameManager.cs"
 "Assets/Scripts/GameManagement/Route.cs"
 "Assets/Scripts/PlayerManagement/Player.cs"
+"Assets/Scripts/PlayerManagement/Stone.cs"
 "Assets/Scripts/Property.cs"
 "Assets/Scripts/Test Scripts/PlayerTest.cs"
 -langversion:9.0
