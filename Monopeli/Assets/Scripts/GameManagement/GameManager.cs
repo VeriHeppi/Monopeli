@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The game manager manages all aspects of gameplay for example player turns, player movement, player actions, etc.
+/// </summary>
 public class GameManager : MonoBehaviour
 {
 
@@ -19,6 +22,9 @@ public class GameManager : MonoBehaviour
         InitializeGame();
     }
 
+    /// <summary>
+    /// Initializes the game by setting up the board, players, etc.
+    /// </summary>
     private void InitializeGame()
     {
         // Initialization Logic
@@ -29,11 +35,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts a players turn.
+    /// </summary>
     public void StartTurn()
     {
         Player currentPlayer = players[currentPlayerIndex];
     }
 
+    /// <summary>
+    /// Ends current players turn.
+    /// </summary>
     public void EndTurn()
     {
         currentPlayerIndex = (currentPlayerIndex + 1) % players.Length; // Cycle through the players
@@ -48,6 +60,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Check's if game over conditions are met. FE only 1 player remains not bankrupt.
+    /// </summary>
+    /// <returns>False if the game is not over and true if the game is over.</returns>
     private bool CheckGameOverCondition()
     {
         // TODO check if any player has gone bankrupt
